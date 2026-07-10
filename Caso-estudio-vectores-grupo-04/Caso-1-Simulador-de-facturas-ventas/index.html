@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Bancario Inteligente</title>
+    <style>
+        table td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">Simulador de factura de Ventas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Lista de productos</td>
+                <td colspan="3">
+                    <select id="id-select-productos">
+                        <option value="Leche">Leche 900ml - $1.10</option>
+                        <option value="Arroz">Arroz 1Kg - $1.80</option>
+                        <option value="Aceite">Aceite 1L - $3.55</option>
+                        <option value="Azucar">Azúcar 1Kg - $1.23</option>
+                        <option value="Sal">Sal 1Kg - $0.55</option>
+                        <option value="Harina">Harina 1Kg - $1.20</option>
+                        <option value="Atun">Atún 180g - $1.49</option>
+                    </select>
+            </tr>
+            <tr>
+               <td> Ingresar cantidad</td>
+               <td>
+                <input type="number" id="num-id-cantidad">
+               </td>
+               <td>
+                <button id="btn-agregar-producto">Agregar producto</button>
+               </td>
+            </tr>
+               <tr>
+                <td colspan="5">
+                    <button id="btn-limpiar">Limpiar</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Lista de productos comprados: </td>
+                <td>
+                    <textarea id="txt-resumen" rows="8" cols="40" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Subtotal</td>
+                <td colspan="3">
+                    <input type="text" id="text-id-subtotal" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> IVA (15%):</td>
+                <td  colspan="3">
+                    <input type="text" id="text-id-iva" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Descuento:</td>
+                <td colspan="3"> 
+                    <input type="text" id="text-id-descuento" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Total a pagar</td>
+                <td colspan="3">
+                    <input type="text" id="text-id-total" readonly>
+                </td>
+            </tr>
+            </tbody>
+    </table>
+    <script src="JS-Caso-1/app.js"></script>
+</body>
+</html>
